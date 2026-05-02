@@ -1,0 +1,47 @@
+Read ReactJS_Class03.pptx and ReactJS_Class04.pptx.
+
+Create a React Vite + Tailwind CSS app that teaches all concepts from 
+both classes to students who know basic JS/HTML but are new to React.
+
+STRUCTURE:
+- Sidebar navigation with one section per topic:
+  Class 03: useReducer, Context API, Auth Flow, Custom Hooks, Vercel Deploy
+  Class 04: React Query, Vitest Testing, Component Library (shadcn/ui), i18n
+- A Home/Welcome page as the landing screen
+
+EACH TOPIC PAGE must have these 4 sections in order:
+1. ANALOGY — A fun, real-world comparison (e.g. "useReducer is like a 
+   TV remote — you press buttons (actions), the TV decides what to do (reducer)")
+2. CONCEPT — Plain English explanation, 3-5 sentences max, no jargon
+3. CODE EXAMPLE — Minimal, self-contained snippet with beginner-friendly 
+   inline comments on every line. Highlight the most important line.
+4. LIVE DEMO — An interactive widget the student can click/type/toggle 
+   right in the browser. Examples:
+   - useReducer → working counter with +/- /reset buttons
+   - Context API → light/dark theme toggle that affects the whole page
+   - Auth Flow → mock login form that shows/hides a protected dashboard
+   - Custom Hooks → a useFetch demo that loads real data from JSONPlaceholder
+   - React Query → similar to useFetch but using useQuery visually showing 
+     loading/error/success states
+   - i18n → language switcher between English and Bengali (বাংলা) with 
+     3-4 sample translated strings
+
+FOR CLI/CONFIG-ONLY TOPICS (Vercel Deploy, Vitest setup, shadcn/ui init):
+  - Skip the live demo section
+  - Instead render a nicely styled step-by-step guide card in the UI
+  - Also write the full guide to /public/guides/[topic].md
+
+VISUAL STYLE:
+- Clean, modern, student-friendly — not corporate
+- Use color-coded badges to label each section (ANALOGY / CONCEPT / CODE / DEMO)
+- Syntax-highlighted code blocks (use a simple highlight approach or 
+  a lightweight library)
+- Responsive layout (sidebar collapses on mobile)
+- Progress indicator showing how many topics the student has visited
+
+TECH CONSTRAINTS:
+- React + Vite + Tailwind only
+- For React Query demo: use @tanstack/react-query
+- For i18n demo: use react-i18next
+- No other external UI libraries — build components from scratch with Tailwind
+- All demos must work without a backend (use JSONPlaceholder or mock data)

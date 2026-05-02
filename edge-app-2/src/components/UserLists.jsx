@@ -6,9 +6,7 @@ function UserList() {
   const [loadTrigger, setLoadTrigger] = useState(false);
 
   useEffect(() => {
-    console.log("useEffect called");
-    if (!loadTrigger) return;
-
+    console.log("api called");
     setLoading(true);
 
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -20,9 +18,13 @@ function UserList() {
       .catch(() => setLoading(false));
   }, [loadTrigger]);
 
+  const handleButtonClick = () => {
+    setLoadTrigger(!loadTrigger);
+  };
+
   return (
     <div>
-      <button onClick={() => setLoadTrigger(!loadTrigger)}>Load Users</button>
+      <button onClick={handleButtonClick}>Load Users</button>
 
       {loading && <p>Loading...</p>}
 

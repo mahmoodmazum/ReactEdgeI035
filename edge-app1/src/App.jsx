@@ -1,5 +1,6 @@
 import HelloComponent from "./components/HelloComponent";
 import LikeButton from "./components/LikeButton";
+import HookUseEffect from "./components/HookUseEffect";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       />
       <p>Welcome to React JS</p>
       <button>Click Me!</button>
+      <HookUseEffect/>
     </div>
   );
 }

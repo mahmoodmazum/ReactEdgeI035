@@ -1,0 +1,30 @@
+# Node modules — all apps
+edge-app1/node_modules/
+edge-app-2/node_modules/
+edge-app-3/node_modules/
+
+# Build outputs
+edge-app1/dist/
+edge-app-2/dist/
+edge-app-3/dist/
+
+# Environment variables
+edge-app1/.env
+edge-app-2/.env
+edge-app-3/.env
+edge-app1/.env.local
+edge-app-2/.env.local
+edge-app-3/.env.local
+
+# Vite cache
+edge-app1/.vite/
+edge-app-2/.vite/
+edge-app-3/.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

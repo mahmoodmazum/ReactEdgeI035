@@ -1,7 +1,19 @@
-import React from "react";
+import {React,useEffect,useState } from 'react'
 
 function HookUseEffect() {
-  return <div></div>;
+
+  const [value,SetValue]=useState(false);
+
+  useEffect(() => {
+    console.log('useeffect called')
+  }, [value]);
+  
+
+  return (
+    <div>
+      <button onClick={()=>{SetValue(!value)}}>call useeffect</button>
+    </div>
+  )
 }
 
-export default HookUseEffect;
+export default HookUseEffect
